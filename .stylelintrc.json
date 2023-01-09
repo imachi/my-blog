@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "color-named": [
+      "never",
+      {
+        "ignore": ["inside-function"]
+      }
+    ],
+    "order/properties-alphabetical-order": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "always",
+    "string-quotes": "single"
+  }
+}
